@@ -2,9 +2,15 @@
 
 // Including the below class is very important as it has all the functionality to run the code.
 // Your account details (userid, password and api key) will be entered in the class below.
-require_once('expt.php');
+/*function __autoload($class_name) {
+    require $class_name . '.php';
+}*/
+include('experttexting_sms.php');
 
-/*// Creating an object of ExpertTexting SMS Class.
+error_reporting(-1);
+ini_set('display_errors', 'On');
+
+// Creating an object of ExpertTexting SMS Class.
 $expertTexting = new experttexting_sms();
 
 // Sender of the SMS – PreRegistered through the Customer Area.
@@ -26,6 +32,6 @@ echo $expertTexting->send();
 
 // Use the below method to query your account balance
 // The below call is uncommented thus it will run on page execution.
-echo $expertTexting->QueryBalance();*/
+//echo $expertTexting->QueryBalance();
 
 ?>
