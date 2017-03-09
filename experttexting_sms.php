@@ -21,7 +21,7 @@ class experttexting_sms
 
     public function __construct()
     {
-        // Sender of the SMS – PreRegistered through the Customer Area.
+        /*// Sender of the SMS – PreRegistered through the Customer Area.
         $this->from    = '+919790048428';
 
         // The full international mobile number without the + or 00
@@ -29,7 +29,7 @@ class experttexting_sms
 
         // The SMS content.
         $this->msgtext = 'Vimala Anbalagan from Expert Texting';
-        $this->send();
+        $this->send();*/
     }
 
 
